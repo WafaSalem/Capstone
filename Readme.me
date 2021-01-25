@@ -1,0 +1,233 @@
+# Capstone
+
+Udacity Full Stack Nanodegree Capstone Project
+https://capstone-wafa.herokuapp.com/ 
+
+
+I developed this project because I really like reading also I think reading is very important to every one , so that I putted my skills that I learned in this nanodegree to serve this idea
+
+## Getting Started
+
+### Installing Dependencies
+
+#### Python 3.7
+
+Follow instructions to install the latest version of python for your platform in the [python docs](https://docs.python.org/3/using/unix.html#getting-and-installing-the-latest-version-of-python)
+
+#### PIP Dependencies
+
+Once you have your virtual environment setup and running, install dependencies by naviging to the directory and running:
+
+```bash
+pip install -r requirements.txt
+
+er to use pip3 because on some systems pip is mapped with python2
+
+```
+​
+This will install all of the required packages we selected within the `requirements.txt` file.
+ 
+ ''''''''''''''''
+ 
+Run ALL three migration commands ONLY on you first set up:
+# Run the init command once
+    python manage.py db init
+    python manage.py db migrate
+    python manage.py db upgrade
+​
+## Running the server
+Each time you open a new terminal session, run:
+​
+```bash
+On Linux : 
+export FLASK_APP=app.py;
+
+On Windows : 
+set FLASK_APP=app.py;
+
+
+export FLASK_DEBUG=true;
+```
+
+To run the server, execute:
+
+```bash
+flask run --reload
+```
+The `--reload` flag will detect file changes and restart the server automatically.
+
+
+'''''''''''''''''''''''''''
+DATA MODELING:
+
+The schema for the database and helper methods in models.py:
+
+There are two tables created: Product, Books, and Authors
+The Books table is used to add new books , update or delete existing one and also retrieve books info based on the permissions.
+The Books table has a foreign key on the Authors table for auther_id.
+The Authors table is used to add new authors , update or delete existing one and also retrieve authers info based on the permissions.
+Each table has an insert, update, delete, and format helper functions.
+
+Roles & Permissions:
+•	Reader
+         Permissions: [ "get:authors","get:books" ]
+•	Author
+         Permissions: ["get:authors","get:books","post:books"]
+
+•	Reviewer
+         Permissions:["delete:authors","delete:books","get:authors","get:books","patch:authors","patch:books","post:authors", "post:books" ]
+
+Endpoints:
+
+•	GET /last_book
+      -Returnes information for the last book insert to the database
+      Sample response output:
+
+      {
+    "books": [
+        {
+            "book_name": "Structure and Interpretation of Computer Programs",
+            "book_rate": 4,
+            "book_type": "Coding Fundamentals"
+        }
+    ],
+    "success": true
+}
+
+•	GET /last_auther
+      -Returnes information for the last auther insert to the database
+      -Required Authorization
+      Sample response output:
+      {
+    "author": [
+        {
+            "auth_gender": "Male",
+            "auth_name": "Jon Stokes"
+        }
+    ],
+    "success": true
+}
+
+•	GET /books/<int:id>
+    -Returnes book information for the specific id 
+    -Required Authorization
+    Sample response output:
+    {
+    "book_name": "Structure and Interpretation of Computer Programs",
+    "book_rate": 4,
+    "book_type": "Coding Fundamentals",
+    "success": true
+}
+
+•	POST /books/
+    -Send Books information to the database
+    -Required Authorization
+    Sample response output:
+    {
+    "book": 5,
+    "sucess": true
+}
+
+•	POST /authors/
+    -Send Authors information to the database
+    -Required Authorization
+    Sample response output:
+    {
+    "auth_id": 3,
+    "sucess": true
+}
+
+•	PATCH /books/<int:id>
+    -Update books information 
+    -Required Authorization
+    Sample response output:
+    {
+    "sucess": true,
+    "update": 5
+}
+
+•	PATCH /authors/<int:id>
+    -Update authors information 
+    -Required Authorization
+    Sample response output:
+    {
+    "sucess": true,
+    "update": 3
+}
+
+•	DELETE /books/<int:id>
+    -Delete books from database 
+    -Required Authorization
+    Sample response output:
+    {
+    "delete": 5,
+    "sucess": true
+}
+
+•	DELETE /authors/<int:id>
+    -Delete authors from database
+    -Required Authorization
+    Sample response output:
+    {
+    "delete": 3,
+    "sucess": true
+}
+
+ERROR HANDLERS :
+
+
+Error 400 (Bad Request)
+Returns:
+    {
+        "success": False,
+        "error": 400,
+        "message": "Bad Request"
+    }
+Error 401 (Unauthorized Error)
+Returns:
+    {
+        "success": False,
+        "error": 401,
+        "message": "Unauthorized Error"
+    }
+
+Error 403 (Forbidden)
+Returns:
+    {
+        "success": False,
+        "error": 403,
+        "message": "Forbidden"
+    }
+
+Error 404 (Resource Not Found)
+Returns:
+    {
+        "success": False,
+        "error": 404,
+        "message": "resource not found"
+    }
+
+Error 422 (Unprocessable)
+Returns:
+    {
+      "success": False,
+      "error": 422,
+      "message": "unprocessable"
+    }
+
+
+Error 500 (nternal Server Errorr)
+Returns:
+    {
+        "success": False,
+        "error": 500,
+        "message": "nternal Server Errorr"
+    }
+
+
+
+
+
+
+
+
