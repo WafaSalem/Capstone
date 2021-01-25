@@ -1,0 +1,886 @@
+{
+	"id": "1c3f586b-e308-4d7b-9a43-846851cd5e52",
+	"name": "capstone",
+	"timestamp": "2021-01-25T10:55:04.809Z",
+	"collection_id": "4c739467-6534-4b42-93ef-f9823df85a51",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 28,
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "3cb7e03e-610a-41cb-baed-ddfcbbd1093c",
+			"name": "https://capstone-wafa.herokuapp.com/last_book",
+			"url": "https://capstone-wafa.herokuapp.com/last_book",
+			"time": 1093,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				1093
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "287af630-d1e2-4250-93a2-897299af6d0c",
+			"name": "https://capstone-wafa.herokuapp.com/last_author",
+			"url": "https://capstone-wafa.herokuapp.com/last_author",
+			"time": 503,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				503
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "5b35c3f1-f5ad-49ba-9300-b4558000ff6c",
+			"name": "https://capstone-wafa.herokuapp.com/books",
+			"url": "https://capstone-wafa.herokuapp.com/books",
+			"time": 547,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				547
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "ba3d9559-7217-4b84-9797-0387507e1e50",
+			"name": "https://capstone-wafa.herokuapp.com/books/1",
+			"url": "https://capstone-wafa.herokuapp.com/books/1",
+			"time": 1157,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				1157
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "ce81356d-f5d9-4079-bef0-99f3baa7b8f8",
+			"name": "https://capstone-wafa.herokuapp.com/authors",
+			"url": "https://capstone-wafa.herokuapp.com/authors",
+			"time": 1228,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				1228
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "067912c9-5c8b-4021-a64f-b98659100744",
+			"name": "https://capstone-wafa.herokuapp.com/books/1",
+			"url": "https://capstone-wafa.herokuapp.com/books/1",
+			"time": 707,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				707
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "f492cd46-1b53-4d8f-a21f-22d07584775d",
+			"name": "https://capstone-wafa.herokuapp.com/authors/1",
+			"url": "https://capstone-wafa.herokuapp.com/authors/1",
+			"time": 397,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				397
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "6a19d7b3-c754-48ce-ae1f-4e723acb3a51",
+			"name": "https://capstone-wafa.herokuapp.com/books/1",
+			"url": "https://capstone-wafa.herokuapp.com/books/1",
+			"time": 313,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				313
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "3d493592-4221-41b5-9ab8-659ebda9805e",
+			"name": "https://capstone-wafa.herokuapp.com/authors/1",
+			"url": "https://capstone-wafa.herokuapp.com/authors/1",
+			"time": 331,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				331
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "b1b03a7e-a86d-470d-a114-4e94a40d20f7",
+			"name": "https://capstone-wafa.herokuapp.com/last_book",
+			"url": "https://capstone-wafa.herokuapp.com/last_book",
+			"time": 291,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				291
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "57718138-202f-4c05-b7c0-84eca8479e67",
+			"name": "https://capstone-wafa.herokuapp.com/last_author",
+			"url": "https://capstone-wafa.herokuapp.com/last_author",
+			"time": 326,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				326
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "588fc046-48f7-472c-b2c1-e00819e83d0f",
+			"name": "https://capstone-wafa.herokuapp.com/books",
+			"url": "https://capstone-wafa.herokuapp.com/books",
+			"time": 467,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				467
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "9643fcb7-9904-4437-9f7a-7e74d1feb590",
+			"name": "https://capstone-wafa.herokuapp.com/books",
+			"url": "https://capstone-wafa.herokuapp.com/books",
+			"time": 610,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				610
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "c888088e-c346-42e7-821e-304a2e75f12a",
+			"name": "https://capstone-wafa.herokuapp.com/books/2",
+			"url": "https://capstone-wafa.herokuapp.com/books/2",
+			"time": 324,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				324
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "699a73a3-a9fe-4105-b019-c526448d4576",
+			"name": "https://capstone-wafa.herokuapp.com/authors",
+			"url": "https://capstone-wafa.herokuapp.com/authors",
+			"time": 789,
+			"responseCode": {
+				"code": 403,
+				"name": "FORBIDDEN"
+			},
+			"tests": {
+				"Status code is 403": true
+			},
+			"testPassFailCounts": {
+				"Status code is 403": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				789
+			],
+			"allTests": [
+				{
+					"Status code is 403": true
+				}
+			]
+		},
+		{
+			"id": "8c9ded54-5e8d-4b19-bb8c-659a0d6c7d91",
+			"name": "https://capstone-wafa.herokuapp.com/books/1",
+			"url": "https://capstone-wafa.herokuapp.com/books/1",
+			"time": 781,
+			"responseCode": {
+				"code": 403,
+				"name": "FORBIDDEN"
+			},
+			"tests": {
+				"Status code is 403": true
+			},
+			"testPassFailCounts": {
+				"Status code is 403": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				781
+			],
+			"allTests": [
+				{
+					"Status code is 403": true
+				}
+			]
+		},
+		{
+			"id": "ab7453e7-c2ec-487f-98dc-2f3d24173914",
+			"name": "https://capstone-wafa.herokuapp.com/authors/1",
+			"url": "https://capstone-wafa.herokuapp.com/authors/1",
+			"time": 675,
+			"responseCode": {
+				"code": 403,
+				"name": "FORBIDDEN"
+			},
+			"tests": {
+				"Status code is 403": true
+			},
+			"testPassFailCounts": {
+				"Status code is 403": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				675
+			],
+			"allTests": [
+				{
+					"Status code is 403": true
+				}
+			]
+		},
+		{
+			"id": "6ba10ae9-3f67-457c-9bd8-a4f2263d4a52",
+			"name": "https://capstone-wafa.herokuapp.com/books/1",
+			"url": "https://capstone-wafa.herokuapp.com/books/1",
+			"time": 653,
+			"responseCode": {
+				"code": 403,
+				"name": "FORBIDDEN"
+			},
+			"tests": {
+				"Status code is 403": true
+			},
+			"testPassFailCounts": {
+				"Status code is 403": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				653
+			],
+			"allTests": [
+				{
+					"Status code is 403": true
+				}
+			]
+		},
+		{
+			"id": "1985c2d7-ea1b-4838-a24b-437361d52587",
+			"name": "https://capstone-wafa.herokuapp.com/authors/1",
+			"url": "https://capstone-wafa.herokuapp.com/authors/1",
+			"time": 371,
+			"responseCode": {
+				"code": 403,
+				"name": "FORBIDDEN"
+			},
+			"tests": {
+				"Status code is 403": true
+			},
+			"testPassFailCounts": {
+				"Status code is 403": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				371
+			],
+			"allTests": [
+				{
+					"Status code is 403": true
+				}
+			]
+		},
+		{
+			"id": "dd7ee07e-3c1b-4388-928c-af6dc95d9432",
+			"name": "https://capstone-wafa.herokuapp.com/last_book",
+			"url": "https://capstone-wafa.herokuapp.com/last_book",
+			"time": 358,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				358
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "35be8661-9026-4e57-aaf4-3f88c18674dd",
+			"name": "https://capstone-wafa.herokuapp.com/last_author",
+			"url": "https://capstone-wafa.herokuapp.com/last_author",
+			"time": 350,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				350
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "c546b0db-9128-4432-ab63-4e54561c4a56",
+			"name": "https://capstone-wafa.herokuapp.com/authors",
+			"url": "https://capstone-wafa.herokuapp.com/books",
+			"time": 551,
+			"responseCode": {
+				"code": 403,
+				"name": "FORBIDDEN"
+			},
+			"tests": {
+				"Status code is 403": true
+			},
+			"testPassFailCounts": {
+				"Status code is 403": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				551
+			],
+			"allTests": [
+				{
+					"Status code is 403": true
+				}
+			]
+		},
+		{
+			"id": "d23115b5-ef45-4660-bc58-7cab87c0f9ae",
+			"name": "https://capstone-wafa.herokuapp.com/books/1",
+			"url": "https://capstone-wafa.herokuapp.com/books/3",
+			"time": 423,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				423
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "844e3a0f-dec7-4154-bfe9-a96cf5e0f483",
+			"name": "https://capstone-wafa.herokuapp.com/books/1",
+			"url": "https://capstone-wafa.herokuapp.com/books/1",
+			"time": 381,
+			"responseCode": {
+				"code": 403,
+				"name": "FORBIDDEN"
+			},
+			"tests": {
+				"Status code is 403": true
+			},
+			"testPassFailCounts": {
+				"Status code is 403": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				381
+			],
+			"allTests": [
+				{
+					"Status code is 403": true
+				}
+			]
+		},
+		{
+			"id": "bdd0c157-bf80-4dde-97d4-d0a2c9c6e128",
+			"name": "https://capstone-wafa.herokuapp.com/books/1",
+			"url": "https://capstone-wafa.herokuapp.com/books/1",
+			"time": 269,
+			"responseCode": {
+				"code": 403,
+				"name": "FORBIDDEN"
+			},
+			"tests": {
+				"Status code is 403": true
+			},
+			"testPassFailCounts": {
+				"Status code is 403": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				269
+			],
+			"allTests": [
+				{
+					"Status code is 403": true
+				}
+			]
+		},
+		{
+			"id": "3d860386-cb71-4565-ba23-23a375d50202",
+			"name": "https://capstone-wafa.herokuapp.com/authors Copy",
+			"url": "https://capstone-wafa.herokuapp.com/authors",
+			"time": 275,
+			"responseCode": {
+				"code": 403,
+				"name": "FORBIDDEN"
+			},
+			"tests": {
+				"Status code is 403": true
+			},
+			"testPassFailCounts": {
+				"Status code is 403": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				275
+			],
+			"allTests": [
+				{
+					"Status code is 403": true
+				}
+			]
+		},
+		{
+			"id": "42affe35-2a20-49e5-b764-2759a62fddca",
+			"name": "https://capstone-wafa.herokuapp.com/authors/1",
+			"url": "https://capstone-wafa.herokuapp.com/authors/1",
+			"time": 959,
+			"responseCode": {
+				"code": 403,
+				"name": "FORBIDDEN"
+			},
+			"tests": {
+				"Status code is 403": true
+			},
+			"testPassFailCounts": {
+				"Status code is 403": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				959
+			],
+			"allTests": [
+				{
+					"Status code is 403": true
+				}
+			]
+		},
+		{
+			"id": "952dec30-b809-4386-ad18-3285d0e6a406",
+			"name": "https://capstone-wafa.herokuapp.com/authors/1",
+			"url": "https://capstone-wafa.herokuapp.com/authors/1",
+			"time": 322,
+			"responseCode": {
+				"code": 403,
+				"name": "FORBIDDEN"
+			},
+			"tests": {
+				"Status code is 403": true
+			},
+			"testPassFailCounts": {
+				"Status code is 403": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				322
+			],
+			"allTests": [
+				{
+					"Status code is 403": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 15451,
+	"collection": {
+		"requests": [
+			{
+				"id": "3cb7e03e-610a-41cb-baed-ddfcbbd1093c",
+				"method": "GET"
+			},
+			{
+				"id": "287af630-d1e2-4250-93a2-897299af6d0c",
+				"method": "GET"
+			},
+			{
+				"id": "5b35c3f1-f5ad-49ba-9300-b4558000ff6c",
+				"method": "POST"
+			},
+			{
+				"id": "ba3d9559-7217-4b84-9797-0387507e1e50",
+				"method": "GET"
+			},
+			{
+				"id": "ce81356d-f5d9-4079-bef0-99f3baa7b8f8",
+				"method": "POST"
+			},
+			{
+				"id": "067912c9-5c8b-4021-a64f-b98659100744",
+				"method": "PATCH"
+			},
+			{
+				"id": "f492cd46-1b53-4d8f-a21f-22d07584775d",
+				"method": "PATCH"
+			},
+			{
+				"id": "6a19d7b3-c754-48ce-ae1f-4e723acb3a51",
+				"method": "DELETE"
+			},
+			{
+				"id": "3d493592-4221-41b5-9ab8-659ebda9805e",
+				"method": "DELETE"
+			},
+			{
+				"id": "b1b03a7e-a86d-470d-a114-4e94a40d20f7",
+				"method": "GET"
+			},
+			{
+				"id": "57718138-202f-4c05-b7c0-84eca8479e67",
+				"method": "GET"
+			},
+			{
+				"id": "588fc046-48f7-472c-b2c1-e00819e83d0f",
+				"method": "POST"
+			},
+			{
+				"id": "9643fcb7-9904-4437-9f7a-7e74d1feb590",
+				"method": "POST"
+			},
+			{
+				"id": "c888088e-c346-42e7-821e-304a2e75f12a",
+				"method": "GET"
+			},
+			{
+				"id": "699a73a3-a9fe-4105-b019-c526448d4576",
+				"method": "POST"
+			},
+			{
+				"id": "8c9ded54-5e8d-4b19-bb8c-659a0d6c7d91",
+				"method": "PATCH"
+			},
+			{
+				"id": "ab7453e7-c2ec-487f-98dc-2f3d24173914",
+				"method": "PATCH"
+			},
+			{
+				"id": "6ba10ae9-3f67-457c-9bd8-a4f2263d4a52",
+				"method": "DELETE"
+			},
+			{
+				"id": "1985c2d7-ea1b-4838-a24b-437361d52587",
+				"method": "DELETE"
+			},
+			{
+				"id": "dd7ee07e-3c1b-4388-928c-af6dc95d9432",
+				"method": "GET"
+			},
+			{
+				"id": "35be8661-9026-4e57-aaf4-3f88c18674dd",
+				"method": "GET"
+			},
+			{
+				"id": "c546b0db-9128-4432-ab63-4e54561c4a56",
+				"method": "POST"
+			},
+			{
+				"id": "d23115b5-ef45-4660-bc58-7cab87c0f9ae",
+				"method": "GET"
+			},
+			{
+				"id": "844e3a0f-dec7-4154-bfe9-a96cf5e0f483",
+				"method": "DELETE"
+			},
+			{
+				"id": "bdd0c157-bf80-4dde-97d4-d0a2c9c6e128",
+				"method": "PATCH"
+			},
+			{
+				"id": "3d860386-cb71-4565-ba23-23a375d50202",
+				"method": "POST"
+			},
+			{
+				"id": "42affe35-2a20-49e5-b764-2759a62fddca",
+				"method": "DELETE"
+			},
+			{
+				"id": "952dec30-b809-4386-ad18-3285d0e6a406",
+				"method": "PATCH"
+			}
+		]
+	}
+}
