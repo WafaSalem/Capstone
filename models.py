@@ -4,7 +4,7 @@ import os
 import json
 from sqlalchemy.orm import relationship
 
-database_path = os.environ['DATABASE_URL']="postgres://{}:{}@{}/{}".format('postgres','wafa','localhost:5432','capstone')
+database_path = os.environ['DATABASE_URL']
 
 db = SQLAlchemy()
 
