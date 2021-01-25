@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "94bc402e-1442-4364-a615-2a8a6c1f4a92",
+		"_postman_id": "4c739467-6534-4b42-93ef-f9823df85a51",
 		"name": "capstone",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -9,7 +9,7 @@
 			"name": "Reviewer",
 			"item": [
 				{
-					"name": "http://127.0.0.1:5000/last_book",
+					"name": "https://capstone-wafa.herokuapp.com/last_book",
 					"event": [
 						{
 							"listen": "test",
@@ -28,15 +28,13 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://127.0.0.1:5000/last_book",
-							"protocol": "http",
+							"raw": "https://capstone-wafa.herokuapp.com/last_book",
+							"protocol": "https",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"capstone-wafa",
+								"herokuapp",
+								"com"
 							],
-							"port": "5000",
 							"path": [
 								"last_book"
 							]
@@ -45,7 +43,7 @@
 					"response": []
 				},
 				{
-					"name": "http://127.0.0.1:5000/last_author",
+					"name": "https://capstone-wafa.herokuapp.com/last_author",
 					"event": [
 						{
 							"listen": "test",
@@ -64,15 +62,13 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://127.0.0.1:5000/last_author",
-							"protocol": "http",
+							"raw": "https://capstone-wafa.herokuapp.com/last_author",
+							"protocol": "https",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"capstone-wafa",
+								"herokuapp",
+								"com"
 							],
-							"port": "5000",
 							"path": [
 								"last_author"
 							]
@@ -81,7 +77,7 @@
 					"response": []
 				},
 				{
-					"name": "http://127.0.0.1:5000/books",
+					"name": "https://capstone-wafa.herokuapp.com/books",
 					"event": [
 						{
 							"listen": "test",
@@ -108,15 +104,13 @@
 							}
 						},
 						"url": {
-							"raw": "http://127.0.0.1:5000/books",
-							"protocol": "http",
+							"raw": "https://capstone-wafa.herokuapp.com/books",
+							"protocol": "https",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"capstone-wafa",
+								"herokuapp",
+								"com"
 							],
-							"port": "5000",
 							"path": [
 								"books"
 							]
@@ -125,7 +119,7 @@
 					"response": []
 				},
 				{
-					"name": "http://127.0.0.1:5000/books/1",
+					"name": "https://capstone-wafa.herokuapp.com/books/1",
 					"event": [
 						{
 							"listen": "test",
@@ -143,15 +137,13 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://127.0.0.1:5000/books/1",
-							"protocol": "http",
+							"raw": "https://capstone-wafa.herokuapp.com/books/1",
+							"protocol": "https",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"capstone-wafa",
+								"herokuapp",
+								"com"
 							],
-							"port": "5000",
 							"path": [
 								"books",
 								"1"
@@ -161,7 +153,7 @@
 					"response": []
 				},
 				{
-					"name": "http://127.0.0.1:5000/authors",
+					"name": "https://capstone-wafa.herokuapp.com/authors",
 					"event": [
 						{
 							"listen": "test",
@@ -188,15 +180,13 @@
 							}
 						},
 						"url": {
-							"raw": "http://127.0.0.1:5000/authors",
-							"protocol": "http",
+							"raw": "https://capstone-wafa.herokuapp.com/authors",
+							"protocol": "https",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"capstone-wafa",
+								"herokuapp",
+								"com"
 							],
-							"port": "5000",
 							"path": [
 								"authors"
 							]
@@ -205,7 +195,7 @@
 					"response": []
 				},
 				{
-					"name": "http://127.0.0.1:5000/books/1",
+					"name": "https://capstone-wafa.herokuapp.com/books/1",
 					"event": [
 						{
 							"listen": "test",
@@ -232,15 +222,13 @@
 							}
 						},
 						"url": {
-							"raw": "http://127.0.0.1:5000/books/1",
-							"protocol": "http",
+							"raw": "https://capstone-wafa.herokuapp.com/books/1",
+							"protocol": "https",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"capstone-wafa",
+								"herokuapp",
+								"com"
 							],
-							"port": "5000",
 							"path": [
 								"books",
 								"1"
@@ -250,7 +238,7 @@
 					"response": []
 				},
 				{
-					"name": "http://127.0.0.1:5000/authors/1",
+					"name": "https://capstone-wafa.herokuapp.com/authors/1",
 					"event": [
 						{
 							"listen": "test",
@@ -277,15 +265,13 @@
 							}
 						},
 						"url": {
-							"raw": "http://127.0.0.1:5000/authors/1",
-							"protocol": "http",
+							"raw": "https://capstone-wafa.herokuapp.com/authors/1",
+							"protocol": "https",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"capstone-wafa",
+								"herokuapp",
+								"com"
 							],
-							"port": "5000",
 							"path": [
 								"authors",
 								"1"
@@ -295,7 +281,7 @@
 					"response": []
 				},
 				{
-					"name": "http://127.0.0.1:5000/books/1",
+					"name": "https://capstone-wafa.herokuapp.com/books/1",
 					"event": [
 						{
 							"listen": "test",
@@ -322,15 +308,13 @@
 							}
 						},
 						"url": {
-							"raw": "http://127.0.0.1:5000/books/1",
-							"protocol": "http",
+							"raw": "https://capstone-wafa.herokuapp.com/books/1",
+							"protocol": "https",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"capstone-wafa",
+								"herokuapp",
+								"com"
 							],
-							"port": "5000",
 							"path": [
 								"books",
 								"1"
@@ -340,7 +324,7 @@
 					"response": []
 				},
 				{
-					"name": "http://127.0.0.1:5000/authors/1",
+					"name": "https://capstone-wafa.herokuapp.com/authors/1",
 					"event": [
 						{
 							"listen": "test",
@@ -358,15 +342,13 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "http://127.0.0.1:5000/authors/1",
-							"protocol": "http",
+							"raw": "https://capstone-wafa.herokuapp.com/authors/1",
+							"protocol": "https",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"capstone-wafa",
+								"herokuapp",
+								"com"
 							],
-							"port": "5000",
 							"path": [
 								"authors",
 								"1"
@@ -411,7 +393,7 @@
 			"name": "Author",
 			"item": [
 				{
-					"name": "http://127.0.0.1:5000/last_book",
+					"name": "https://capstone-wafa.herokuapp.com/last_book",
 					"event": [
 						{
 							"listen": "test",
@@ -429,15 +411,13 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://127.0.0.1:5000/last_book",
-							"protocol": "http",
+							"raw": "https://capstone-wafa.herokuapp.com/last_book",
+							"protocol": "https",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"capstone-wafa",
+								"herokuapp",
+								"com"
 							],
-							"port": "5000",
 							"path": [
 								"last_book"
 							]
@@ -446,7 +426,7 @@
 					"response": []
 				},
 				{
-					"name": "http://127.0.0.1:5000/last_author",
+					"name": "https://capstone-wafa.herokuapp.com/last_author",
 					"event": [
 						{
 							"listen": "test",
@@ -464,15 +444,13 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://127.0.0.1:5000/last_author",
-							"protocol": "http",
+							"raw": "https://capstone-wafa.herokuapp.com/last_author",
+							"protocol": "https",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"capstone-wafa",
+								"herokuapp",
+								"com"
 							],
-							"port": "5000",
 							"path": [
 								"last_author"
 							]
@@ -481,7 +459,7 @@
 					"response": []
 				},
 				{
-					"name": "http://127.0.0.1:5000/books",
+					"name": "https://capstone-wafa.herokuapp.com/books",
 					"event": [
 						{
 							"listen": "test",
@@ -508,15 +486,13 @@
 							}
 						},
 						"url": {
-							"raw": "http://127.0.0.1:5000/books",
-							"protocol": "http",
+							"raw": "https://capstone-wafa.herokuapp.com/books",
+							"protocol": "https",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"capstone-wafa",
+								"herokuapp",
+								"com"
 							],
-							"port": "5000",
 							"path": [
 								"books"
 							]
@@ -525,7 +501,7 @@
 					"response": []
 				},
 				{
-					"name": "http://127.0.0.1:5000/books",
+					"name": "https://capstone-wafa.herokuapp.com/books",
 					"event": [
 						{
 							"listen": "test",
@@ -552,15 +528,13 @@
 							}
 						},
 						"url": {
-							"raw": "http://127.0.0.1:5000/books",
-							"protocol": "http",
+							"raw": "https://capstone-wafa.herokuapp.com/books",
+							"protocol": "https",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"capstone-wafa",
+								"herokuapp",
+								"com"
 							],
-							"port": "5000",
 							"path": [
 								"books"
 							]
@@ -569,7 +543,7 @@
 					"response": []
 				},
 				{
-					"name": "http://127.0.0.1:5000/books/2",
+					"name": "https://capstone-wafa.herokuapp.com/books/2",
 					"event": [
 						{
 							"listen": "test",
@@ -587,15 +561,13 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://127.0.0.1:5000/books/2",
-							"protocol": "http",
+							"raw": "https://capstone-wafa.herokuapp.com/books/2",
+							"protocol": "https",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"capstone-wafa",
+								"herokuapp",
+								"com"
 							],
-							"port": "5000",
 							"path": [
 								"books",
 								"2"
@@ -605,7 +577,7 @@
 					"response": []
 				},
 				{
-					"name": "http://127.0.0.1:5000/authors",
+					"name": "https://capstone-wafa.herokuapp.com/authors",
 					"event": [
 						{
 							"listen": "test",
@@ -632,15 +604,13 @@
 							}
 						},
 						"url": {
-							"raw": "http://127.0.0.1:5000/authors",
-							"protocol": "http",
+							"raw": "https://capstone-wafa.herokuapp.com/authors",
+							"protocol": "https",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"capstone-wafa",
+								"herokuapp",
+								"com"
 							],
-							"port": "5000",
 							"path": [
 								"authors"
 							]
@@ -649,7 +619,7 @@
 					"response": []
 				},
 				{
-					"name": "http://127.0.0.1:5000/books/1",
+					"name": "https://capstone-wafa.herokuapp.com/books/1",
 					"event": [
 						{
 							"listen": "test",
@@ -667,15 +637,13 @@
 						"method": "PATCH",
 						"header": [],
 						"url": {
-							"raw": "http://127.0.0.1:5000/books/1",
-							"protocol": "http",
+							"raw": "https://capstone-wafa.herokuapp.com/books/1",
+							"protocol": "https",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"capstone-wafa",
+								"herokuapp",
+								"com"
 							],
-							"port": "5000",
 							"path": [
 								"books",
 								"1"
@@ -685,7 +653,7 @@
 					"response": []
 				},
 				{
-					"name": "http://127.0.0.1:5000/authors/1",
+					"name": "https://capstone-wafa.herokuapp.com/authors/1",
 					"event": [
 						{
 							"listen": "test",
@@ -703,15 +671,13 @@
 						"method": "PATCH",
 						"header": [],
 						"url": {
-							"raw": "http://127.0.0.1:5000/authors/1",
-							"protocol": "http",
+							"raw": "https://capstone-wafa.herokuapp.com/authors/1",
+							"protocol": "https",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"capstone-wafa",
+								"herokuapp",
+								"com"
 							],
-							"port": "5000",
 							"path": [
 								"authors",
 								"1"
@@ -721,7 +687,7 @@
 					"response": []
 				},
 				{
-					"name": "http://127.0.0.1:5000/books/1",
+					"name": "https://capstone-wafa.herokuapp.com/books/1",
 					"event": [
 						{
 							"listen": "test",
@@ -739,15 +705,13 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "http://127.0.0.1:5000/books/1",
-							"protocol": "http",
+							"raw": "https://capstone-wafa.herokuapp.com/books/1",
+							"protocol": "https",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"capstone-wafa",
+								"herokuapp",
+								"com"
 							],
-							"port": "5000",
 							"path": [
 								"books",
 								"1"
@@ -757,7 +721,7 @@
 					"response": []
 				},
 				{
-					"name": "http://127.0.0.1:5000/authors/1",
+					"name": "https://capstone-wafa.herokuapp.com/authors/1",
 					"event": [
 						{
 							"listen": "test",
@@ -775,15 +739,13 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "http://127.0.0.1:5000/authors/1",
-							"protocol": "http",
+							"raw": "https://capstone-wafa.herokuapp.com/authors/1",
+							"protocol": "https",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"capstone-wafa",
+								"herokuapp",
+								"com"
 							],
-							"port": "5000",
 							"path": [
 								"authors",
 								"1"
@@ -828,7 +790,7 @@
 			"name": "Reader",
 			"item": [
 				{
-					"name": "http://127.0.0.1:5000/last_book",
+					"name": "https://capstone-wafa.herokuapp.com/last_book",
 					"event": [
 						{
 							"listen": "test",
@@ -846,15 +808,13 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://127.0.0.1:5000/last_book",
-							"protocol": "http",
+							"raw": "https://capstone-wafa.herokuapp.com/last_book",
+							"protocol": "https",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"capstone-wafa",
+								"herokuapp",
+								"com"
 							],
-							"port": "5000",
 							"path": [
 								"last_book"
 							]
@@ -863,7 +823,7 @@
 					"response": []
 				},
 				{
-					"name": "http://127.0.0.1:5000/last_author",
+					"name": "https://capstone-wafa.herokuapp.com/last_author",
 					"event": [
 						{
 							"listen": "test",
@@ -881,15 +841,13 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://127.0.0.1:5000/last_author",
-							"protocol": "http",
+							"raw": "https://capstone-wafa.herokuapp.com/last_author",
+							"protocol": "https",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"capstone-wafa",
+								"herokuapp",
+								"com"
 							],
-							"port": "5000",
 							"path": [
 								"last_author"
 							]
@@ -898,7 +856,40 @@
 					"response": []
 				},
 				{
-					"name": "http://127.0.0.1:5000/books/1",
+					"name": "https://capstone-wafa.herokuapp.com/authors",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 403\", function () {\r",
+									"    pm.response.to.have.status(403);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "https://capstone-wafa.herokuapp.com/books",
+							"protocol": "https",
+							"host": [
+								"capstone-wafa",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"books"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://capstone-wafa.herokuapp.com/books/1",
 					"event": [
 						{
 							"listen": "test",
@@ -916,15 +907,13 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://127.0.0.1:5000/books/3",
-							"protocol": "http",
+							"raw": "https://capstone-wafa.herokuapp.com/books/3",
+							"protocol": "https",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"capstone-wafa",
+								"herokuapp",
+								"com"
 							],
-							"port": "5000",
 							"path": [
 								"books",
 								"3"
@@ -934,7 +923,7 @@
 					"response": []
 				},
 				{
-					"name": "http://127.0.0.1:5000/books/1",
+					"name": "https://capstone-wafa.herokuapp.com/books/1",
 					"event": [
 						{
 							"listen": "test",
@@ -952,15 +941,13 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "http://127.0.0.1:5000/books/1",
-							"protocol": "http",
+							"raw": "https://capstone-wafa.herokuapp.com/books/1",
+							"protocol": "https",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"capstone-wafa",
+								"herokuapp",
+								"com"
 							],
-							"port": "5000",
 							"path": [
 								"books",
 								"1"
@@ -970,7 +957,7 @@
 					"response": []
 				},
 				{
-					"name": "http://127.0.0.1:5000/books/1",
+					"name": "https://capstone-wafa.herokuapp.com/books/1",
 					"event": [
 						{
 							"listen": "test",
@@ -997,15 +984,13 @@
 							}
 						},
 						"url": {
-							"raw": "http://127.0.0.1:5000/books/1",
-							"protocol": "http",
+							"raw": "https://capstone-wafa.herokuapp.com/books/1",
+							"protocol": "https",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"capstone-wafa",
+								"herokuapp",
+								"com"
 							],
-							"port": "5000",
 							"path": [
 								"books",
 								"1"
@@ -1015,7 +1000,7 @@
 					"response": []
 				},
 				{
-					"name": "http://127.0.0.1:5000/authors",
+					"name": "https://capstone-wafa.herokuapp.com/authors Copy",
 					"event": [
 						{
 							"listen": "test",
@@ -1042,15 +1027,13 @@
 							}
 						},
 						"url": {
-							"raw": "http://127.0.0.1:5000/authors",
-							"protocol": "http",
+							"raw": "https://capstone-wafa.herokuapp.com/authors",
+							"protocol": "https",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"capstone-wafa",
+								"herokuapp",
+								"com"
 							],
-							"port": "5000",
 							"path": [
 								"authors"
 							]
@@ -1059,7 +1042,7 @@
 					"response": []
 				},
 				{
-					"name": "http://127.0.0.1:5000/authors/1",
+					"name": "https://capstone-wafa.herokuapp.com/authors/1",
 					"event": [
 						{
 							"listen": "test",
@@ -1077,15 +1060,13 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "http://127.0.0.1:5000/authors/1",
-							"protocol": "http",
+							"raw": "https://capstone-wafa.herokuapp.com/authors/1",
+							"protocol": "https",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"capstone-wafa",
+								"herokuapp",
+								"com"
 							],
-							"port": "5000",
 							"path": [
 								"authors",
 								"1"
@@ -1095,7 +1076,7 @@
 					"response": []
 				},
 				{
-					"name": "http://127.0.0.1:5000/authors/1",
+					"name": "https://capstone-wafa.herokuapp.com/authors/1",
 					"event": [
 						{
 							"listen": "test",
@@ -1122,15 +1103,13 @@
 							}
 						},
 						"url": {
-							"raw": "http://127.0.0.1:5000/authors/1",
-							"protocol": "http",
+							"raw": "https://capstone-wafa.herokuapp.com/authors/1",
+							"protocol": "https",
 							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
+								"capstone-wafa",
+								"herokuapp",
+								"com"
 							],
-							"port": "5000",
 							"path": [
 								"authors",
 								"1"
