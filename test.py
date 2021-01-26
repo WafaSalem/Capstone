@@ -16,7 +16,8 @@ class CapstoneTestCase(unittest.TestCase):
         # Test database name
         self.database_name = "test"
 
-        self.database_path = "postgresql://postgres:wafa@localhost:5432/" + self.database_name
+        self.database_path = "postgresql://postgres:wafa@localhost:5432/"
+        + self.database_name
         setup_db(self.app, self.database_path)
 
         # binds the app to the current context
@@ -29,7 +30,6 @@ class CapstoneTestCase(unittest.TestCase):
             self.author = os.environ['author']
             self.reader = os.environ['reader']
 
-        
         self.new_book = {
             'book_name': 'Structure and Interpretation of Computer Programs',
             'book_type': 'Coding Fundamentals',
@@ -136,20 +136,20 @@ class CapstoneTestCase(unittest.TestCase):
 
     def test_get_book_by_id(self):
         res = self.client().get('/books/' + str(self.current_book_id),
-                                headers={"Authorization": "Bearer {}".format(self.reader)})
+                                headers={"Authorization": "Bearer {}"
+                                .format(self.reader)})
         data = json.loads(res.data)
 
         self.assertEqual(res.status_code, 200)
         self.assertEqual(data['success'], True)
-
-   
 
         self.assertEqual(res.status_code, 500)
         self.assertEqual(data['success'], False)
 
     def test_patch_book_by_id(self):
         res = self.client().patch('/books/' + str(self.current_book_id),
-                                  headers={"Authorization": "Bearer {}".format(self.reviewr)},
+                                  headers={"Authorization": "Bearer {}"
+                                  .format(self.reviewr)},
                                   json=self.change_book)
         data = json.loads(res.data)
 
@@ -158,7 +158,8 @@ class CapstoneTestCase(unittest.TestCase):
 
     def test_patch_book_by_id_not_valid_token(self):
         res = self.client().patch('/books/' + str(self.current_book_id),
-                                  headers={"Authorization": "Bearer {}".format(self.reader)},
+                                  headers={"Authorization": "Bearer {}"
+                                  .format(self.reader)},
                                   json=self.change_book)
         data = json.loads(res.data)
 
@@ -167,7 +168,8 @@ class CapstoneTestCase(unittest.TestCase):
 
     def test_patch_auther_by_id(self):
         res = self.client().patch('/authors/' + str(self.current_auther_id),
-                                  headers={"Authorization": "Bearer {}".format(self.reviewr)},
+                                  headers={"Authorization": "Bearer {}"
+                                  .format(self.reviewr)},
                                   json=self.change_auther)
         data = json.loads(res.data)
 
@@ -176,7 +178,8 @@ class CapstoneTestCase(unittest.TestCase):
 
     def test_patch_auther_by_id_not_valid_token(self):
         res = self.client().patch('/authors/' + str(self.current_auther_id),
-                                  headers={"Authorization": "Bearer {}".format(self.author)},
+                                  headers={"Authorization": "Bearer {}"
+                                  .format(self.author)},
                                   json=self.change_auther)
         data = json.loads(res.data)
 
@@ -185,7 +188,8 @@ class CapstoneTestCase(unittest.TestCase):
 
     def test_delete_book_by_id(self):
         res = self.client().delete('/books/' + str(self.current_book_id),
-                                   headers={"Authorization": "Bearer {}".format(self.reviewr)})
+                                   headers={"Authorization": "Bearer {}"
+                                   .format(self.reviewr)})
         data = json.loads(res.data)
 
         self.assertEqual(res.status_code, 200)
@@ -193,7 +197,8 @@ class CapstoneTestCase(unittest.TestCase):
 
     def test_delete_book_by_id_not_valid_token(self):
         res = self.client().delete('/books/' + str(self.current_book_id),
-                                   headers={"Authorization": "Bearer {}".format(self.reader)})
+                                   headers={"Authorization": "Bearer {}"
+                                   .format(self.reader)})
         data = json.loads(res.data)
 
         self.assertEqual(res.status_code, 403)
@@ -201,7 +206,8 @@ class CapstoneTestCase(unittest.TestCase):
 
     def test_delete_auther_by_id(self):
         res = self.client().delete('/authors/' + str(self.current_auther_id),
-                                   headers={"Authorization": "Bearer {}".format(self.reviewr)})
+                                   headers={"Authorization": "Bearer {}"
+                                   .format(self.reviewr)})
         data = json.loads(res.data)
 
         self.assertEqual(res.status_code, 200)
@@ -209,7 +215,8 @@ class CapstoneTestCase(unittest.TestCase):
 
     def test_delete_auther_by_id_not_valid_token(self):
         res = self.client().delete('/authors/' + str(self.current_auther_id),
-                                   headers={"Authorization": "Bearer {}".format(self.author)})
+                                   headers={"Authorization": "Bearer {}"
+                                   .format(self.author)})
         data = json.loads(res.data)
 
         self.assertEqual(res.status_code, 403)
