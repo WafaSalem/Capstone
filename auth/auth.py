@@ -6,9 +6,9 @@ from urllib.request import urlopen
 import os
 
 
-AUTH0_DOMAIN = os.environ['AUTH0_DOMAIN'] 
-ALGORITHMS = os.environ['ALGORITHMS'] 
-API_AUDIENCE = os.environ['API_AUDIENCE'] 
+AUTH0_DOMAIN = os.environ['AUTH0_DOMAIN']
+ALGORITHMS = os.environ['ALGORITHMS']
+API_AUDIENCE = os.environ['API_AUDIENCE']
 
 # AuthError Exception
 '''
@@ -104,7 +104,7 @@ def verify_decode_jwt(token):
             print('incorrect claims')
             raise AuthError({
                 'code': 'invalid_claims',
-                'description': 'Incorrect claims.Please check the audience and issuer.'
+                'description': 'Incorrect claims'
             }, 401)
 
         except Exception:

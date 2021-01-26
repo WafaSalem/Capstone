@@ -12,10 +12,11 @@ class CapstoneTestCase(unittest.TestCase):
         """Define test variables and initialize app."""
         self.app = create_app()
         self.client = self.app.test_client
-                
+
         # Test database name
         self.database_name = "capstone"
-        self.database_path = "postgres://{}:{}@{}/{}".format('postgres','wafa','localhost:5432','capstone') + self.database_name
+        self.database_path = "postgres://{}:{}@{}/{}".format(
+            'postgres', 'wafa', 'localhost:5432', 'capstone') + self.database_name
         setup_db(self.app, self.database_path)
 
         # binds the app to the current context
@@ -30,72 +31,91 @@ class CapstoneTestCase(unittest.TestCase):
         self.reader = 'eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Ik1jS2lkajJURE5vT3NzZDhnazVTUSJ9.eyJpc3MiOiJodHRwczovL2ZzbmQtd2FmYS51cy5hdXRoMC5jb20vIiwic3ViIjoiYXV0aDB8NjAwZTk2N2YzYjJkMzQwMDY5ZDA3N2IwIiwiYXVkIjoiY2Fwc3RvbmUiLCJpYXQiOjE2MTE1Njg4MzcsImV4cCI6MTYxMTY1NTIzNywiYXpwIjoibTByVHlZYkF5UTB0Nm1yUks2N1JtbTIxSkxCV3B3ZnkiLCJzY29wZSI6IiIsInBlcm1pc3Npb25zIjpbImdldDphdXRob3JzIiwiZ2V0OmJvb2tzIl19.fmWvf8M8aBSZ5L6hPbn9yMG-oCudb1TtAW9nt4keUTN4edXvl0Ptugd_jzT89Pq-Ny_jmB2izc6M_T1GTh8mlnIaIewAHGZmHl6_MPJQY1j8L-szyZiUb4MGuh9YeKRYYnltwdKuG9tkAigvwXDw7AXIlrgvHRIApxLleHWpAub-sWFKgLh4pZkdFY6b4uP2xA_k8k-P9uQbQXeGMi5DpRh4miWBXlvIX4-HPoXExZvUUDM6Yby-AekU1Cz5ZwHrm-j7Q04tNvE3itgd36I04mM2PEKABajI-Up2FVetTK49vd1N8kF89M4kXIrTR_2nglaF5co6ocKBVYrxf-1TFA'
 
         self.new_book = {
-            'book_name':'Structure and Interpretation of Computer Programs',
-            'book_type':'Coding Fundamentals',
-            'book_rate':4 }
-        
+            'book_name': 'Structure and Interpretation of Computer Programs',
+            'book_type': 'Coding Fundamentals',
+            'book_rate': 4}
+
         self.new_auther = {
-            'auth_name':'Jon Stokes'  ,
-            'auth_gender':'Male' }
-        
+            'auth_name': 'Jon Stokes',
+            'auth_gender': 'Male'}
+
         self.change_book = {
-            'book_name':'Structure and Interpretation of Computer Programs',
-            'book_type':'Coding Fundamentals',
-            'book_rate':7 }
-        
+            'book_name': 'Structure and Interpretation of Computer Programs',
+            'book_type': 'Coding Fundamentals',
+            'book_rate': 7}
+
         self.change_auther = {
-            'auth_name':'Jon Stokes'  ,
-            'auth_gender':'Male' }
-        
+            'auth_name': 'Jon Stokes',
+            'auth_gender': 'Male'}
+
     def tearDown(self):
-        """Executed after each test"""        
+        """Executed after each test"""
         pass
-    
-    def test_welcome_page(self):       
+
+    def test_welcome_page(self):
         res = self.client().get('/')
-        
+
         self.assertEqual(res.status_code, 200)
-        
-    def test_post_book_valid_token(self):        
-        res = self.client().post('/books', headers={"Authorization": "Bearer {}".format(self.reviewr)}, json=self.new_book)
+
+    def test_post_book_valid_token(self):
+        res = self.client().post(
+            '/books',
+            headers={
+                "Authorization": "Bearer {}".format(
+                    self.reviewr)},
+            json=self.new_book)
         data = json.loads(res.data)
-        
-        self.assertEqual(res.status_code, 200)
-        self.assertEqual(data['success'], True)
-        
-    def test_post_author_valid_token(self):        
-        res = self.client().post('/authors', headers={"Authorization": "Bearer {}".format(self.reviewr)}, json=self.new_auther)
-        data = json.loads(res.data)
-        
+
         self.assertEqual(res.status_code, 200)
         self.assertEqual(data['success'], True)
-        
-    def test_post_book_not_valid_token(self):        
-        res = self.client().post('/books', headers={"Authorization": "Bearer {}".format(self.reader)}, json=self.new_book)
+
+    def test_post_author_valid_token(self):
+        res = self.client().post(
+            '/authors',
+            headers={
+                "Authorization": "Bearer {}".format(
+                    self.reviewr)},
+            json=self.new_auther)
         data = json.loads(res.data)
-        
+
+        self.assertEqual(res.status_code, 200)
+        self.assertEqual(data['success'], True)
+
+    def test_post_book_not_valid_token(self):
+        res = self.client().post(
+            '/books',
+            headers={
+                "Authorization": "Bearer {}".format(
+                    self.reader)},
+            json=self.new_book)
+        data = json.loads(res.data)
+
         self.assertEqual(res.status_code, 403)
         self.assertEqual(data['success'], False)
-        
-    def test_post_author_not_valid_token(self):        
-        res = self.client().post('/authors', headers={"Authorization": "Bearer {}".format(self.reader)}, json=self.new_auther)
+
+    def test_post_author_not_valid_token(self):
+        res = self.client().post(
+            '/authors',
+            headers={
+                "Authorization": "Bearer {}".format(
+                    self.reader)},
+            json=self.new_auther)
         data = json.loads(res.data)
-        
+
         self.assertEqual(res.status_code, 403)
         self.assertEqual(data['success'], False)
-        
-    def test_get_last_book(self):        
+
+    def test_get_last_book(self):
         res = self.client().get('/last_book')
         data = json.loads(res.data)
 
-        info = Books.query.all()        
+        info = Books.query.all()
         book_info = [books.format() for book in info]
-       
+
         self.assertEqual(res.status_code, 200)
         self.assertEqual(data['success'], True)
         self.assertEqual(data['books'], book_info)
 
+
 if __name__ == "__main__":
     unittest.main()
-        
-       
